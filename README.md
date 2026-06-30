@@ -6,6 +6,10 @@
 [![Model Verification](https://img.shields.io/badge/model-verification-orange)](#what-it-checks)
 
 > Verify whether your Claude Code endpoint is really serving **GLM-5.2** — using tokenizer fingerprinting, reasoning-token checks, config inspection, and an optional 1M context probe.
+>
+> **verify-glm is not another LLM eval framework. It verifies whether the model behind your Claude Code / LLM gateway is actually the model you think it is.**
+>
+> **verify-glm 不是又一个模型评测框架，它验证的是：你接入的 Claude Code / LLM 网关背后，到底是不是真的那个模型。**
 
 `verify-glm` is a Claude Code skill + standalone Python CLI for developers who route Claude Code through a GLM-compatible / OpenAI-compatible gateway and want evidence that the backend model is actually GLM-5.2, not a silently substituted or downgraded model.
 
